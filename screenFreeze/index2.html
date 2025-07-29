@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ransomware Simulation</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: red;
+      color: white;
+      font-family: monospace;
+      /* font-size: 2.5em; */
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .warning {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .note {
+      font-size: 1em;
+      margin-top: 30px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="warning">⚠️ CAUTION: This is a ransomware simulation ⚠️</div>
+  <div>Your files have been encrypted.</div>
+  <div>Access to your system is restricted.</div>
+  <div>To restore your data, follow the instructions sent by the attacker.</div>
+  <div class="note">(This is a simulated attack. No actual harm is done.)</div>
+</body>
+<script>
+    const audio = new Audio('beep.mp3');
+    audio.loop = true;
+    audio.play().catch(err => console.error('Audio play failed:', err));
+  </script>
+</html>
